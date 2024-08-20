@@ -73,7 +73,7 @@ module "records" {
       records = [
         module.jenkins.public_ip
       ]
-      # allow_overwrite = true
+       allow_overwrite = true
     },
     {
       name    = "jenkins-agent"
@@ -82,7 +82,7 @@ module "records" {
       records = [
         module.jenkins_agent.private_ip
       ]
-      # allow_overwrite = true
+      allow_overwrite = true
     }
     # {
     #   name    = "nexus"
